@@ -1,14 +1,3 @@
-
-
-
-Test Account
-```
-username: savvagench
-email: savva.gench@example.com
-password: qwerty123
-```
-
-
 # Launch the application
 For demo purposes we are using [realworld](https://github.com/gothinkster/realworld) example app frontend(React)
 ### Setup instruction:
