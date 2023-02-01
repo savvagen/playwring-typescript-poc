@@ -1,0 +1,29 @@
+{
+  "name": "playwring-typescript-poc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "pretest": "tsc --incremental -p src/tests/tsconfig.json",
+    "test-compiled": "cp playwright.config.js dist/ && playwright test -c dist",
+    "test-compiled:ui": "cp playwright.config.js dist/ && cd dist && playwright test -c ./ tests/ui",
+    "test-compiled:api": "cp playwright.config.js dist/ && cd dist && playwright test -c ./ tests/api",
+    "test": "playwright test src/test/first.spec.ts --trace=\"on\" --headed"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@playwright/test": "^1.30.0",
+    "@types/chai": "^4.3.4",
+    "chai": "^4.3.7",
+    "playwright": "^1.30.0",
+    "ts-loader": "^9.4.2",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.4"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-decorators": "^7.20.13"
+  }
+}

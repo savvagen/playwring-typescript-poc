@@ -1,0 +1,6 @@
+.idea
+/node_modules
+/playwright-report
+/test-results
+/dist
+/screenshots
